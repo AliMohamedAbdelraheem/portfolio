@@ -2,13 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body {
-  background: #0f172a;
+  background: #0b0f19;
   color: #e5e7eb;
-  line-height: 1.6;
 }
 
 .hero {
@@ -20,66 +19,55 @@ body {
   text-align: center;
 }
 
-.hero h1 {
+.glow {
   font-size: 3rem;
+  color: white;
+  text-shadow: 0 0 15px rgba(37,99,235,0.6);
 }
 
-.hero p {
-  color: #38bdf8;
-  margin: 10px 0 20px;
-}
-
-.buttons a {
-  text-decoration: none;
-  color: #0f172a;
-  background: #38bdf8;
-  padding: 10px 20px;
-  margin: 5px;
+.btn {
+  margin-top: 20px;
+  background: #2563eb;
+  color: white;
+  padding: 12px 30px;
   border-radius: 6px;
-  font-weight: bold;
+  text-decoration: none;
 }
 
 section {
-  padding: 80px 10%;
+  padding: 90px 12%;
 }
 
-h2 {
-  margin-bottom: 20px;
-  color: #38bdf8;
-}
-
-.skills .grid {
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 15px;
 }
 
-.skills span {
-  background: #1e293b;
-  padding: 10px;
-  text-align: center;
-  border-radius: 6px;
-}
-
-.projects .card {
-  background: #1e293b;
-  padding: 20px;
-  margin-bottom: 20px;
+.grid span, .card {
+  background: #111827;
+  padding: 15px;
   border-radius: 8px;
+  text-align: center;
 }
 
-.projects a {
-  color: #38bdf8;
-  text-decoration: none;
+.list li {
+  margin-bottom: 10px;
 }
 
-.contact p {
-  margin: 5px 0;
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 footer {
   text-align: center;
   padding: 20px;
-  background: #020617;
-  color: #94a3b8;
+  color: #9ca3af;
 }
