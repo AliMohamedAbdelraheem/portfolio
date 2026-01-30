@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  color: #38bdf8;
+  margin: 10px 0 20px;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: #0f172a;
+  background: #38bdf8;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #38bdf8;
+}
+
+.skills .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.skills span {
+  background: #1e293b;
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.projects .card {
+  background: #1e293b;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.projects a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.contact p {
+  margin: 5px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+  color: #94a3b8;
+}
