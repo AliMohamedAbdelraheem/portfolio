@@ -1,93 +1,81 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-  background: radial-gradient(circle at top, #111, #000);
-  color: #f9fafb;
+    background: #0a100d;
+    color: #d6d5c9;
 }
 
+/* HERO */
 .hero {
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: 360px 1fr;
-  gap: 100px;
-  padding: 100px;
-  align-items: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-/* CARD */
+.hero h1 {
+    font-size: 3rem;
+    color: #a22c29;
+}
+
+.hero p {
+    color: #b9baa3;
+    margin: 15px 0 50px;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    width: 90%;
+    max-width: 800px;
+}
+
 .card {
-  background: #fff;
-  color: #000;
-  border-radius: 28px;
-  padding: 20px;
-  animation: fadeUp 1s ease;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 40px;
+    border-radius: 15px;
+    color: #d6d5c9;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
-.card .image {
-  height: 260px;
-  border-radius: 20px;
-  background: linear-gradient(135deg, #f97316, #000);
-  margin-bottom: 20px;
+.card h2 {
+    color: #a22c29;
 }
 
-.card h3 {
-  font-weight: 800;
-  margin-bottom: 10px;
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #902923;
+    box-shadow: 0 15px 40px rgba(144, 41, 35, 0.4);
 }
 
-.card p {
-  font-size: 14px;
-  color: #555;
+/* SECTIONS */
+.section {
+    min-height: 100vh;
+    padding: 120px 10%;
 }
 
-/* TEXT */
-.content h1 {
-  font-size: 120px;
-  line-height: 0.95;
-  letter-spacing: -2px;
+.section h2 {
+    color: #a22c29;
+    margin-bottom: 20px;
 }
 
-.content h1 span {
-  display: block;
-  font-weight: 900;
-  color: rgba(255,255,255,0.15);
-}
-
-.desc {
-  max-width: 520px;
-  margin: 30px 0;
-  color: #9ca3af;
-}
-
-/* STATS */
-.stats {
-  display: flex;
-  gap: 50px;
-}
-
-.stats strong {
-  font-size: 36px;
-}
-
-.stats span {
-  display: block;
-  font-size: 14px;
-  color: #9ca3af;
-}
-
-/* ANIMATION */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.section p {
+    color: #b9baa3;
+    font-size: 1.1rem;
 }
