@@ -1,53 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Ali Mohamed Abdel Raheem</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Ali Mohamed Abdel Raheem | Backend Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
 
-<!-- HERO -->
 <section class="hero">
-    <h1>Ali Mohamed Abdel Raheem</h1>
-    <p>Backend Developer | Computer Science Student</p>
 
-    <div class="cards">
-        <button class="card" onclick="scrollToSection('skills')">
-            <h2>Skills</h2>
-        </button>
+  <!-- Profile Card -->
+  <div class="profile-card">
+    <img src="profile.jpg" alt="Ali Mohamed">
+    <h3>Ali Mohamed Abdel Raheem</h3>
+    <p>PHP Backend Developer focused on scalable systems.</p>
 
-        <button class="card" onclick="scrollToSection('projects')">
-            <h2>Projects</h2>
-        </button>
 
-        <button class="card" onclick="scrollToSection('contact')">
-            <h2>Contact</h2>
-        </button>
-    </div>
-</section>
+  </div>
 
-<!-- SKILLS -->
-<section id="skills" class="section">
-    <h2>Skills</h2>
-    <p>PHP • SQL • C++ • Data Structures • Problem Solving</p>
-</section>
+  <!-- Main Content -->
+  <div class="hero-text">
+    <h1>SOFTWARE<br><span>ENGINEER</span></h1>
 
-<!-- PROJECTS -->
-<section id="projects" class="section">
-    <h2>Projects</h2>
-    <p>Restaurant Management System, Database Design, Portfolio Website</p>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>
-        GitHub • LinkedIn • Email<br>
-        ali@email.com
+    <p class="subtitle">
+      Passionate about backend systems, problem solving, and building scalable real-world applications.
     </p>
+
+    <div class="stats">
+      <div><strong>+3</strong><span>Years Learning</span></div>
+      <div><strong>450+</strong><span>Problems Solved</span></div>
+      <div><strong>5+</strong><span>Projects</span></div>
+    </div>
+
+    <div class="nav-cards">
+      <button data-target="about">About Me</button>
+      <button data-target="skills">Skills</button>
+      <button data-target="contact">Contact</button>
+    </div>
+  </div>
+
 </section>
+<section id="about" class="section about">
+  <h2>About Me</h2>
+
+  <div class="about-wrapper">
+    <p>
+      I am a Computer Science student at Badr University in Assiut, with a strong interest in
+      backend development and problem solving. My academic background and hands-on practice
+      helped me build a solid foundation in C++, data structures, and databases.
+      Alongside my studies, I lead the ICPC team at BUA, where I actively work on improving
+      algorithmic thinking, teamwork, and tackling complex programming challenges.
+    </p>
+  </div>
+</section>
+
+
+
+<section id="skills" class="section">
+  <h2>Skills</h2>
+
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <h3>Programming</h3>
+      <ul>
+        <li>C++</li>
+        <li>C#</li>
+        <li>OOP</li>
+        <li>Data Structures</li>
+        <li>Algorithmes</li>
+      </ul>
+    </div>
+
+    <div class="skill-card">
+      <h3>Backend</h3>
+      <ul>
+        <li>PHP</li>
+        <li>SQL</li>
+        <li>Authentication & Authorization</li>
+        <li>REST APIs</li>
+      </ul>
+    </div>
+
+    <div class="skill-card">
+      <h3>Tools & Systems</h3>
+      <ul>
+        <li>Git / GitHub</li>
+        <li>Linux</li>
+        <li>VSCode</li>
+        <li>Network Design & Simulation</li>
+        <li>Embedded Systems</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <h2>Contact</h2>
+  <p>
+    If you'd like to get in touch, you can reach me via email or connect with me on my social platforms:
+  </p>
+  
+  <div class="contact-icons">
+
+    <a href="mailto:alimohamedabdelraheem712@gmail.com" aria-label="Email">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/ali-mohamed-8117202b2" target="_blank" aria-label="LinkedIn">
+      <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+    <a href="https://www.facebook.com/ali.mohamed.836765" target="_blank" aria-label="Facebook">
+      <i class="fa-brands fa-facebook-f"></i>
+    </a>
+
+    <a href="https://www.instagram.com/ali_mohamed_0_" target="_blank" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://www.reddit.com/u/Ali-ElSabaa" target="_blank" aria-label="Reddit">
+      <i class="fa-brands fa-reddit-alien"></i>
+    </a>
+  </div>
+</section>
+
 
 <script src="script.js"></script>
 </body>
