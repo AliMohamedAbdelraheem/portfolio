@@ -2,72 +2,97 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-  background: #0b0f19;
-  color: #e5e7eb;
+  background: #0a0a0a;
+  color: #f9fafb;
 }
 
 .hero {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.glow {
-  font-size: 3rem;
-  color: white;
-  text-shadow: 0 0 15px rgba(37,99,235,0.6);
-}
-
-.btn {
-  margin-top: 20px;
-  background: #2563eb;
-  color: white;
-  padding: 12px 30px;
-  border-radius: 6px;
-  text-decoration: none;
-}
-
-section {
-  padding: 90px 12%;
-}
-
-.grid {
+  min-height: 100vh;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
+  grid-template-columns: 350px 1fr;
+  align-items: center;
+  padding: 80px;
+  gap: 80px;
 }
 
-.grid span, .card {
-  background: #111827;
-  padding: 15px;
-  border-radius: 8px;
+/* Profile Card */
+.profile-card {
+  background: #121212;
+  border-radius: 20px;
+  padding: 25px;
   text-align: center;
+  animation: slideIn 1s ease;
 }
 
-.list li {
+.profile-card img {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 15px;
+}
+
+.profile-card h3 {
   margin-bottom: 10px;
 }
 
-.fade {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: 0.8s ease;
-}
-
-.fade.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
+.profile-card p {
   color: #9ca3af;
+  font-size: 14px;
+}
+
+.socials {
+  margin-top: 15px;
+}
+
+.socials a {
+  margin: 0 8px;
+  color: #f97316;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Text Section */
+.hero-text h1 {
+  font-size: 96px;
+  line-height: 1;
+}
+
+.hero-text h1 span {
+  color: #f97316;
+}
+
+.subtitle {
+  margin: 25px 0;
+  max-width: 500px;
+  color: #9ca3af;
+}
+
+.stats {
+  display: flex;
+  gap: 40px;
+}
+
+.stats div strong {
+  font-size: 32px;
+  display: block;
+}
+
+.stats div span {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
