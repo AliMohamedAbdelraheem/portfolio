@@ -1,1 +1,5 @@
-document.body.style.opacity = "1";
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({
+        behavior: "smooth"
+    });
+}
