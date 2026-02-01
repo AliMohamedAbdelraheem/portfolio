@@ -38,10 +38,14 @@ body {
 }
 
 .profile-card img {
-  width: 100%;
-  border-radius: 16px;
-  margin-bottom: 15px;
+  width: 120px;
+  aspect-ratio: 1 / 1;   /* يحجز مكان ثابت */
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  background-color: #1a1a1a; /* لون ثابت وقت التحميل */
 }
+
 
 .profile-card h3 {
   margin-bottom: 10px;
