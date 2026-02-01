@@ -15,7 +15,7 @@ body {
 }
 
 /* =========================
-   Hero Section (GRID)
+   Hero Section (Desktop)
    ========================= */
 .hero {
   min-height: 100vh;
@@ -27,7 +27,7 @@ body {
 }
 
 /* =========================
-   Profile Card (DESKTOP)
+   Profile Card
    ========================= */
 .profile-card {
   background: #f9fafb;
@@ -39,14 +39,11 @@ body {
 
 .profile-card img {
   width: 100%;
-  border-radius: 16px;     /* مربع زي الأول */
+  border-radius: 16px; /* مربع على اللاب */
   margin-bottom: 15px;
   display: block;
   background-color: #1a1a1a;
 }
-
-
-
 
 .profile-card h3 {
   margin-bottom: 10px;
@@ -234,7 +231,7 @@ body {
 }
 
 /* =========================
-   MOBILE RESPONSIVE
+   Mobile Responsive
    ========================= */
 @media (max-width: 768px) {
 
@@ -254,19 +251,9 @@ body {
     width: 120px;
     height: 120px;
     object-fit: cover;
-    border-radius: 50%;   /* دايرة للموبايل فقط */
+    border-radius: 50%; /* دايرة للموبايل */
     margin: 0 auto 15px;
   }
-
-}
-
-
-@media (min-width: 768px) {
-  .profile-card img {
-    border-radius: 12px;   /* مربع ناعم زي الأول */
-  }
-}
-
 
   .hero-text h1 {
     font-size: 42px;
@@ -322,4 +309,4 @@ body {
   .contact-icons a {
     font-size: 46px;
   }
-
+}
